@@ -27,14 +27,14 @@ const SingleMovie = async ({ params }) => {
       <h1 className="text-2xl mt-6 mb-2 mx-6 font-bold">
         Netflix \ <sapn className="text-pink-700">{details.type}</sapn>
       </h1>
-      <div className="w-full  ">
+      <div className="w-full ">
         <Image
           src={details.backgroundImage.url}
           alt=""
           width={600}
           height={600}
         />
-        <div>
+        <div className="mx-1 md:mx-0">
           <h1 className="text-3xl font-bold my-2">{details.title}</h1>
           <p>{details.synopsis}</p>
         </div>
