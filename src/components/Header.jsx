@@ -31,6 +31,7 @@ const Header = () => {
         </ul>
         {toggle === false ? (
           <AiOutlineMenu
+            size={25}
             className={`md:hidden block`}
             onClick={() => {
               setToggle(!toggle);
@@ -38,6 +39,7 @@ const Header = () => {
           />
         ) : (
           <AiOutlineClose
+            size={25}
             onClick={() => {
               setToggle(!toggle);
             }}
@@ -47,7 +49,7 @@ const Header = () => {
         <ul
           className={`absolute top-14 left-0 bg-white w-full h-screen flex flex-col items-center  gap-y-4 pt-20 ${
             toggle ? "translate-x-[0]" : "translate-x-[-100%]"
-          } duration-300`}
+          } duration-300 text-xl`}
         >
           <li onClick={() => setToggle(false)}>
             <Link href={"/"}>Home</Link>
